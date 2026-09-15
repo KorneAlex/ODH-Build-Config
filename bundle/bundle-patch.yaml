@@ -448,6 +448,9 @@ patch:
     - name: RELATED_IMAGE_ODH_MOD_ARCH_DATA_CONNECT_HUB_IMAGE
       value: quay.io/opendatahub/odh-mod-arch-data-connect-hub@sha256:afbba4812a44eca1e3a1d9f15cb58c8f8af5312a1be144eadff4ae6920af09b6
       component: odh-mod-arch-data-connect-hub
+    - name: RELATED_IMAGE_ODH_LLM_D_COORDINATOR_IMAGE
+      value: quay.io/opendatahub/odh-llm-d-coordinator@sha256:0cc7d14e0f10a35dec2cbbf8d4afa183da7108e5eb71928c38e95e4427cc4ca2
+      component: odh-llm-d-coordinator
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:

@@ -66,6 +66,8 @@ ARG ODH_AUTORAG_INFERENCE_GIT_URL=
 ARG ODH_AUTORAG_INFERENCE_GIT_COMMIT=
 ARG ODH_MOD_ARCH_DATA_CONNECT_HUB_GIT_URL=
 ARG ODH_MOD_ARCH_DATA_CONNECT_HUB_GIT_COMMIT=
+ARG ODH_LLM_D_COORDINATOR_GIT_URL=
+ARG ODH_LLM_D_COORDINATOR_GIT_COMMIT=
 
 # Core bundle labels.
 LABEL operators.operatorframework.io.bundle.mediatype.v1=registry+v1
@@ -146,7 +148,9 @@ LABEL \
       odh-autorag-inference.git.url="${ODH_AUTORAG_INFERENCE_GIT_URL}" \
       odh-autorag-inference.git.commit="${ODH_AUTORAG_INFERENCE_GIT_COMMIT}" \
       odh-mod-arch-data-connect-hub.git.url="${ODH_MOD_ARCH_DATA_CONNECT_HUB_GIT_URL}" \
-      odh-mod-arch-data-connect-hub.git.commit="${ODH_MOD_ARCH_DATA_CONNECT_HUB_GIT_COMMIT}"
+      odh-mod-arch-data-connect-hub.git.commit="${ODH_MOD_ARCH_DATA_CONNECT_HUB_GIT_COMMIT}" \
+      odh-llm-d-coordinator.git.url="${ODH_LLM_D_COORDINATOR_GIT_URL}" \
+      odh-llm-d-coordinator.git.commit="${ODH_LLM_D_COORDINATOR_GIT_COMMIT}"
 
 LABEL com.redhat.component="odh-operator-bundle" \
       description="odh-operator-bundle" \
