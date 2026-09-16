@@ -6,8 +6,6 @@ ARG OPENDATAHUB_OPERATOR_IMAGE=
 ARG BUILD_METADATA_URL=
 ARG ODH_LATENCY_PREDICTOR_TRAINING_GIT_URL=
 ARG ODH_LATENCY_PREDICTOR_TRAINING_GIT_COMMIT=
-ARG ODH_LATENCY_PREDICTOR_TEST_GIT_URL=
-ARG ODH_LATENCY_PREDICTOR_TEST_GIT_COMMIT=
 ARG ODH_DASHBOARD_OPERATOR_GIT_URL=
 ARG ODH_DASHBOARD_OPERATOR_GIT_COMMIT=
 ARG ODH_MCP_LIFECYCLE_MODULE_OPERATOR_GIT_URL=
@@ -85,8 +83,6 @@ LABEL \
       opendatahub-operator.git.commit="${OPENDATAHUB_OPERATOR_GIT_COMMIT}" \
       odh-latency-predictor-training.git.url="${ODH_LATENCY_PREDICTOR_TRAINING_GIT_URL}" \
       odh-latency-predictor-training.git.commit="${ODH_LATENCY_PREDICTOR_TRAINING_GIT_COMMIT}" \
-      odh-latency-predictor-test.git.url="${ODH_LATENCY_PREDICTOR_TEST_GIT_URL}" \
-      odh-latency-predictor-test.git.commit="${ODH_LATENCY_PREDICTOR_TEST_GIT_COMMIT}" \
       odh-dashboard-operator.git.url="${ODH_DASHBOARD_OPERATOR_GIT_URL}" \
       odh-dashboard-operator.git.commit="${ODH_DASHBOARD_OPERATOR_GIT_COMMIT}" \
       odh-mcp-lifecycle-module-operator.git.url="${ODH_MCP_LIFECYCLE_MODULE_OPERATOR_GIT_URL}" \
